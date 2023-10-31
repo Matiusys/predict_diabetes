@@ -111,19 +111,6 @@ sns.heatmap(data.isnull())
 ```
 ![](isnull.png)
 
-Semuanya merah yang menandakan bahwa datasetsnya tidak memiliki data null di dalamnya, selanjutnya akan melihat apakah ada data duplikasi,
-
-
-```python
-plt.subplot(1, 2, 1)
-plt.pie(pie_values, labels=['No Diabetes', 'Diabetes'],
-        autopct='%1.2f%%',
-        startangle=90,
-        explode=(0.1, 0.1),
-       wedgeprops={'edgecolor': 'black', 'linewidth': 1, 'antialiased': True})
-plt.title('Diabetes vs No Diabetes cases')
-```
-![](Diabetnodiabet.png)
 
 ```
 Selanjutnya, akan melihat variabel variabel diantara tabel tersebut
