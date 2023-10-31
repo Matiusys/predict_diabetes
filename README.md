@@ -190,4 +190,4 @@ Akurasi data : 0.75
 # Deployment
 
 ![](hasil.png)
-https://github.com/Matiusys/predict_diabetes/blob/main/streamlit-diabetes.py
+https://predictdiabetes-zcr3zvprfhfuktqqus4m9n.streamlit.app/
