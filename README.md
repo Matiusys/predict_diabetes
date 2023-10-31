@@ -112,7 +112,6 @@ sns.heatmap(data.isnull())
 ![](isnull.png)
 
 
-```
 Selanjutnya, akan melihat variabel variabel diantara tabel tersebut
 
 ```python
@@ -126,7 +125,7 @@ sns.countplot(data=df_oversampler, x='Outcome')
 ```
 ![](count_plot.png)
 
-```
+
 Dan proses EDA dan data cleaning sudah diselesaikan. Selanjutnya adalah membuat modelnya.
 
 
