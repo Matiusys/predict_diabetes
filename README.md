@@ -35,9 +35,8 @@ Dataset yang saya gunakan berasal dari kaggle yang berisi prediksi diabetes. Dat
 
 Untuk data preparation ini saya melakukan EDA (Exploratory Data Analysis) terlebih dahulu, lalu melakukan proses data cleansing agar model yang dihasilkan memiliki akurasi yang lebih tinggi.
 
-```
-Sebelum memulai data preparation, mari kita mendownload datasets dari kaggle yang akan kita gunakan. Langkah Pertama adalah memasukan token kaggle,
 
+Sebelum memulai data preparation, mari kita mendownload datasets dari kaggle yang akan kita gunakan. Langkah Pertama adalah memasukan token kaggle,
 
 ```python
 from google.colab import files
