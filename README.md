@@ -100,19 +100,30 @@ Selanjutnya kita akan melihat korelasi antar kolomnya,
 ```python
 plt.figure(figsize=(15, 5))
 sns.heatmap(df.corr(), annot=True)
-
 ```
+![](korelasi.png)
+
+
 Korelasi antar kolom numerik terlihat aman namun saya merasa terlalu banyak data yang tidak berkaitan erat, selanjutnya melihat apakah di dalam datasetsnya terdapat nilai null,
 
-``python
+```python
 sns.heatmap(data.isnull())
-
-
 ```
+![](isnull.png)
+
 Semuanya merah yang menandakan bahwa datasetsnya tidak memiliki data null di dalamnya, selanjutnya akan melihat apakah ada data duplikasi,
 
+
 ```python
-data[data.duplicated()]
+plt.subplot(1, 2, 1)
+plt.pie(pie_values, labels=['No Diabetes', 'Diabetes'],
+        autopct='%1.2f%%',
+        startangle=90,
+        explode=(0.1, 0.1),
+       wedgeprops={'edgecolor': 'black', 'linewidth': 1, 'antialiased': True})
+plt.title('Diabetes vs No Diabetes cases')
+```
+![](Diabetnodiabet.png)
 
 ```
 Selanjutnya, akan melihat variabel variabel diantara tabel tersebut
@@ -125,6 +136,8 @@ selanjutnya kita melihat table yang terdapat pada variabel variabel
 
 ```python
 sns.countplot(data=df_oversampler, x='Outcome')
+```
+![](count_plot.png)
 
 ```
 Dan proses EDA dan data cleaning sudah diselesaikan. Selanjutnya adalah membuat modelnya.
