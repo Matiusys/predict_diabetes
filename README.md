@@ -187,3 +187,6 @@ Disitu terlihat jelas bahwa model kita berhasil memprediksi nilai diabetes yang 
 Akurasi data : 0.75
 
 # Deployment
+
+![](hasil.png)
+https://github.com/Matiusys/predict_diabetes/blob/main/streamlit-diabetes.py
